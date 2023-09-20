@@ -1,0 +1,11 @@
+un convertPHPToUSD(amountInPHP: Double): Double {
+    val exchangeRate = 0.018
+    val amountInUSD = amountInPHP * exchangeRate
+    return amountInUSD
+}
+
+fun main() {
+    val amountInPHP = 1000.00
+    val amountInUSD = convertPHPToUSD(amountInPHP)
+    println("$amountInPHP PHP is equal to $amountInUSD USD")
+}
