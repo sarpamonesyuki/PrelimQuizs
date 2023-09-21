@@ -1,0 +1,39 @@
+fun main() {
+    println("Fahrenheit to Celsius: " + FahrenheitToCelsius(120.2))
+    println("Celsius to Fahrenheit: "+ CelsiusToFahrenheit(45.4))
+    println("Kelvin to Fahrenheit: "+ KelvinToFahrenheit(2.1))
+    println("Fahrenheit to Kelvin: "+ FahrenheitToKelvin(4.1))
+    println("Celsius to Kelvin: "+ CelsiusToKelvin(3.4))
+    println("Kelvin to Celsius: "+ KelvinToCelsius(1.4))
+    
+}
+    
+fun FahrenheitToCelsius(n: Double): Double{
+    var Celsius = 5/(9*(n-32))
+    return Celsius
+}
+
+fun CelsiusToFahrenheit(n: Double): Double{
+    var Fahrenheit = n*((9/5)+32)
+    return Fahrenheit
+}
+
+fun KelvinToFahrenheit(n: Double): Double{
+    var Fahrenheit = 1.8 * ((n-273.15)+32)
+    return Fahrenheit
+}
+
+fun FahrenheitToKelvin(n: Double): Double{
+    var Kelvin = ((n-32)*(5/9))+273.15
+    return Kelvin
+}
+
+fun CelsiusToKelvin(n: Double): Double{
+    var Kelvin = n + 273.15
+    return Kelvin
+}
+
+fun KelvinToCelsius(n: Double): Double{
+    var Celsius = n - 273.15
+    return Celsius
+}
